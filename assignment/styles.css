@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(255,245,175),rgb(212, 150, 209));
+  }
+  nav {
+    background-color:rgb(255,113,113);
+    color: #fff;
+    display: flex;
+    justify-content: center; /* Align both logo and links to the center */
+    align-items: center;
+    
+    padding: 10px 20px;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 90px;
+  }
+  nav ul li {
+    margin-right: 20px; 
+  }
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+  
+  }
+  .logo img {
+    width: 50px; /* Adjusted size */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 55px;
+  }
+  .main-container {
+    display: flex;
+  }
+
+  .content {
+    flex: 1;
+  }
+  .text{
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: xx-large;
+  }
+
+  .image {
+    flex-shrink: 0; /* Prevent image from shrinking */
+    width: 50%; /* Adjust width as needed */
+  }
+
+  /* Optional: Adjust image size */
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+  .main-container {
+    display: flex;
+    background: linear-gradient(to right, rgb(255,245,175),rgb(212, 150, 209));
+  }
+
+  .content {
+    flex: 1;
+    display: flex; /* Nested flexbox container */
+    flex-direction: column; /* Display text content in a column */
+    justify-content: center; /* Center text content vertically */
+    align-items: flex-start; /* Align text content to the start */
+    margin-left: 45px;
+  }
+
+  .image {
+    flex-shrink: 0; /* Prevent image from shrinking */
+    width: 50%; /* Adjust width as needed */
+  }
+
+  /* Optional: Adjust image size */
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content p{
+    margin-top: 35px;
+    line-height: 1.5;
+  }
+  .content button{
+    margin-top: 20px;
+    background-color:rgb(255,113,113);
+    color: white;
+    padding: 10px 70px;
+    
+   
+
+    
+  }
+  
+.container {
+    display: flex;
+    width: 100%;
+  }
+  .images {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .images img {
+    width: 100%;
+    height: auto;
+  }
+  .image-right {
+    width: 50%;
+    background-image: url('image3.jpg'); /* Replace with your image path */
+    background-size: cover;
+  }
+  .text-box {
+    width: 100%;
+    background-color: #ff6b81; /* Coral color */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-box h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+  }
+  .text-box button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+
+  .image-container{
+    position: relative;
+    margin-bottom: 250px;
+    padding-bottom: 250px;
+    
+  }
+  #img1{
+
+    width:200px;
+    height: 200px;
+    position: absolute;
+    top: 255px;
+    left: 75px;
+
+    
+  }
+
+  #img2{
+    width:200px;
+    height: 200px;
+    position: absolute;
+    
+    bottom: 6%;
+    left: 75px;
+    
+  }
+  #img3{
+    width: 200px;
+    height: 420px;
+    position: absolute;
+    left: 22%;
+    top: 14%;
+  }
+
+ .text-container{
+  position: absolute;
+  left: 45%;
+  top: 30%;
+  background-color: #ff6b81;
+  width: 400px;
+  height: 200px;
+ }
+ .small-text{
+  margin-left: 25px;
+ }
+
+ .large-text{
+  margin-left: 25px;
+  letter-spacing: 5px;
+ }
+
+ .click{
+  margin-left: 25px;
+ }
+  
+  
+  
+
+
+  
+
+
+  @media only screen and (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav ul li {
+      margin: 10px 0;
+    }
+    .logo {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
